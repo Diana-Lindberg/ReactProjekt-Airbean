@@ -20,7 +20,7 @@ function Cart() {
 
   return (
     <div>
-       <p className='cart__amount'>{cart.length}</p> 
+       <p className='cart__amount'>{cart.cartItem.length}</p> 
     <button className='bag-button' onClick={toggleBag}>
     <img src={bag} alt="" />
     </button>
@@ -28,9 +28,11 @@ function Cart() {
         <div className='bag-item'> 
         <h1>Din beställning</h1>
         <ul className='bag-list'>
-          <li>kaffe</li>
-          <li>kaffe</li>
-          <li>kaffe</li>
+          {cart.cartItem?.map((cartItem, id) =>(
+            <li key={id}>{ cartItem.title} 
+            <br />{ cartItem.price}</li> 
+            ) 
+          )}
         </ul>
         <h4>Totalt</h4>
         <p>inkl moms + drönarleverans</p>
