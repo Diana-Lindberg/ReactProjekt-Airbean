@@ -1,0 +1,60 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2F2926;
+    display: none; 
+    z-index: 999; 
+}
+
+.menu.open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-content {
+    background-color: #2F2926;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.menu-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+.menu-list li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 32px;
+}
+
+.hamburger-button{
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    z-index: 1000; 
+}

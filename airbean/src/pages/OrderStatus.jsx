@@ -4,11 +4,11 @@ import './OrderStatus.css'
 function OrderStatus(){
 return(
     <div className='status'>
-        <p>ordernummer:</p>
+        <p className='order'>ordernummer:</p>
          <img src={drone} alt="" />
-        <h1>Din beställning är på väg!</h1>
-        <p> minuter</p>
-        <button>Ok,cool!</button>
+        <h1 className='status-heading'>Din beställning är på väg!</h1>
+        <p className='status-time'> minuter</p>
+        <button className='status-button'>Ok,cool!</button>
     </div>
 )
 }

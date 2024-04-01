@@ -1,5 +1,13 @@
 div{
- 
     background: #F3E4E1;
+}
+
+.nav{
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
 
 }

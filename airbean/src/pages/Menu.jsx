@@ -1,10 +1,13 @@
 import header from '/assets/graphics-header.svg'
 import footer from '/assets/graphics-footer.svg'
 
+import Menus from '../components/Menus';
+import Cart from '../components/Cart';
+import HamburgerMenu from '../components/HamburgerMenu'
+import './Menu.css'
 import { useState, useEffect } from 'react';
 
-import Menus from '../components/Menus';
-import './Menu.css'
+
 
 function Menu() {
   const [menu, setMenu] = useState([]);
@@ -35,6 +38,8 @@ function Menu() {
   
      return (
        <section>
+        <HamburgerMenu />
+        <Cart />
          <img src={header} alt="headerbild" />
          <h1>Meny</h1>
          <section className='products'>{menuComponents}</section>
