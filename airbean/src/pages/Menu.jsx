@@ -49,15 +49,3 @@ function Menu() {
    }
   
     export default Menu;
-//  function Menu(){
-//  return(
-//      <div>
-//      <img src={header} alt="" />
-//      <h1>Meny</h1>
-
-//      <img src={footer} alt="" />
-//      </div>
-//  )
-//  }
-
-//  export default Menu;

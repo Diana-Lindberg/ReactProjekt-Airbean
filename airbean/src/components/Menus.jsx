@@ -11,6 +11,8 @@ function Menus(props) {
     const item = {
       title: props.title,
       price: props.price,
+      quantity: 1,
+      id: props.id,
     };
 
     dispatch(addToCart(item));
